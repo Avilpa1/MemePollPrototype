@@ -3,7 +3,7 @@
 
   <div id='loginWrapper' *ngIf='loginWrapper'>
     <button id="loginButton" type="submit" (click)='toLogin()' ion-button>LOGIN</button>  
-    <button id="registerButton" type="submit" ion-button>REGISTER</button>
+    <button id="registerButton" type="submit" (click)= "toRegistration()" ion-button>REGISTER</button>
     <button id="dashboardButton" type="submit" (click)='toDashboard()' ion-button>Go to Dashboard</button>  
   </div>
   <ion-list>

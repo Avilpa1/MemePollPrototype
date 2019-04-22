@@ -5,6 +5,7 @@ import { Injectable } from '@angular/core';
 export class UiProvider {
 
   enableUI:boolean
+  enableSegments: boolean
 
   constructor(public http: HttpClient) {
     console.log('Hello UiProvider Provider');
