@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { UiProvider } from '../../providers/ui/ui'
 
 /**
  * Generated class for the PollInterfacePage page.
@@ -15,11 +16,12 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class PollInterfacePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public UiProvider: UiProvider) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad PollInterfacePage');
+    this.UiProvider.enableUI = false
+    console.log('ionViewDidLoad PollInterfacePage', this.UiProvider.enableUI);
   }
 
 }

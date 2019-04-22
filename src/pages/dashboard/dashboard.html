@@ -7,7 +7,7 @@
       <ion-slides slidesPerView='1'>
         <ion-slide *ngFor="let p of array">
             <ion-card>
-                <a><img src="https://via.placeholder.com/308"></a>
+                <img (click)="toMeme()" src="https://via.placeholder.com/308">
                 <ion-card-content>
                     <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p>
                   </ion-card-content>
