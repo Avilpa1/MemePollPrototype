@@ -4,11 +4,11 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class UiProvider {
 
-  enableSegments:boolean
+  enableUI:boolean
 
   constructor(public http: HttpClient) {
     console.log('Hello UiProvider Provider');
-    this.enableSegments = false
+    this.enableUI = false
   }
   
 }
