@@ -8,6 +8,8 @@ import { SplashPage } from '../pages/splash/splash';
 import { LoginPage } from '../pages/login/login';
 import { LandingPage } from '../pages/landing/landing';
 import { DashboardPage } from '../pages/dashboard/dashboard';
+import { PollResultPage } from '../pages/poll-result/poll-result';
+
 
 @Component({
   templateUrl: 'app.html'
@@ -16,7 +18,7 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   // rootPage: any = SplashPage;
-  rootPage: any = LoginPage;
+  rootPage: any = PollResultPage;
 
   pages: Array<{title: string, component: any}>;
   userOptions: Array<{title: string, component: any}>;
