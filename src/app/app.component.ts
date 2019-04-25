@@ -34,6 +34,7 @@ export class MyApp {
     this.uiProvider.enableUI = false
     this.userOptions = [
       { title: 'Profile', component: HomePage },
+      { title: 'Request', component: HomePage },
       { title: 'History', component: SplashPage },
       { title: 'Rewards', component: HomePage },
       { title: 'Logout', component: SplashPage },

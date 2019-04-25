@@ -5,6 +5,10 @@
     </button> -->
   <ion-title>
       <span id='navText'>MemePoll</span>
+      <ion-navbar>
+          <ion-title>Home</ion-title>
+          <ion-searchbar [(ngModel)]="searchTerm" (ionInput)="setFilteredItems()"></ion-searchbar>
+        </ion-navbar>
       <button *ngIf='false' ion-button (click)='signIn()' clear small float-right>Sign In</button>
       <button ion-button menuToggle='right' float-right>
       <ion-chip color='black' *ngIf='true' float-right>
