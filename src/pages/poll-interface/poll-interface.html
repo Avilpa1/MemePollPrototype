@@ -1,15 +1,22 @@
-<!--
-  Generated template for the PollInterfacePage page.
+<ion-content>
+  
+  <a id="img"><img src={{imgUrl}}></a>
 
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header>
-  <ion-navbar>
-    <ion-title>pollInterface</ion-title>
-  </ion-navbar>
-</ion-header>
+  <div id="memeWrapper">
+    <h1 id="top">{{top}}</h1>
+    <h1 id="center">{{center}}</h1>
+    <h1 id="bottom">{{bottom}}</h1>
+  </div>
 
-<ion-content padding>
+      <div id="buttonWrapper">
+          <h4 id="pollNumber">{{questionNumber}}/{{totalQuestions}}</h4>
+        <ion-icon id="close" name="close" (click)="toDashboard()"></ion-icon>
+        <button id="yes" ion-button color="secondary" (click)="randomImg()" large round >Yes</button>
+        <button id="no" ion-button color="danger" (click)="randomImg()" large round  float-right>No</button>
+      </div>
 
+      <div id="progressWrapper">
+        <div id="bar">
+        </div>
+      </div>
 </ion-content>

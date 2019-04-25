@@ -11,6 +11,7 @@ import { DashboardPage } from '../pages/dashboard/dashboard';
 import { CategoriesPage } from '../pages/categories/categories';
 
 import { UiProvider } from '../providers/ui/ui';
+import { PollInterfacePage } from '../pages/poll-interface/poll-interface';
 
 @Component({
   templateUrl: 'app.html'
@@ -31,12 +32,12 @@ export class MyApp {
               ) {
 
     this.initializeApp();
-    this.uiProvider.enableUI = false
+    this.uiProvider.enableUI = false;
     this.userOptions = [
       { title: 'Profile', component: HomePage },
       { title: 'History', component: SplashPage },
       { title: 'Rewards', component: HomePage },
-      { title: 'Logout', component: SplashPage },
+      { title: 'Logout', component: LoginPage },
     ];
 
   }
@@ -66,5 +67,9 @@ export class MyApp {
 
   toLoader() {
     this.nav.setRoot(SplashPage, {}, { animate: true, duration: 300 })
+  }
+
+  toPoll() {
+    this.nav.setRoot(PollInterfacePage, {}, { animate: true, duration: 300 })
   }
 }

@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { CategoriesPage } from '../categories/categories';
 import { UiProvider } from '../../providers/ui/ui';
 import { SplashPage } from '../splash/splash';
+import { PollInterfacePage } from '../poll-interface/poll-interface';
 
 @IonicPage()
 @Component({
@@ -35,6 +36,10 @@ export class DashboardPage {
 
   toDashboard() {
     this.navCtrl.setRoot(DashboardPage, {}, { animate: true, duration: 300 })
+  }
+
+  toPoll() {
+    this.navCtrl.push(PollInterfacePage, {}, { animate: true, duration: 300 })
   }
 
 
